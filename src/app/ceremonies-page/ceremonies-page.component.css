@@ -1,0 +1,49 @@
+header {
+  background-color: #027b9a;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 120px;
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 0.8;
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+header h1 span {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 25px;
+  line-height: 1;
+}
+header p {
+  padding-top: 30px;
+}
+.ceremony-section {
+  display: flex;
+  align-items: flex-start; /* Aligns content to the top */
+  justify-content: center;
+  padding: 0 30px; /* Removes top padding, adds side padding */
+  box-sizing: border-box;
+}
+
+.text-intro {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  font-family: "Montserrat", sans-serif;
+  margin: 20px auto 0; /* Adds minimal top margin */
+}
+
+@media (max-width: 768px) {
+  .text-intro {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    padding: 0 20px; /* Reduces side padding for smaller screens */
+  }
+}
