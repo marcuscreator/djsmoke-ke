@@ -1,0 +1,194 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #000000, #000000, #000000, #000000);
+  background-size: 100% 100%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+  margin-top: 7%; /* Custom this adjustments for as per display height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); /* Center vertically only */
+  z-index: 10;
+  text-align: left; /* Align text to the left */
+  max-width: 40%;
+  width: 100%; /* Make it responsive */
+  font-family: "Montserrat", sans-serif;
+  padding: 0 10px; /* Optional padding for smaller screens */
+  box-sizing: border-box;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .hero-text {
+    max-width: 80%; /* Adjust max-width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    max-width: 90%; /* Further adjustment for extra small screens */
+  }
+}
+
+.hero-title {
+  font-size: 6rem;
+  margin: 0;
+  color: #20b2aa;
+  line-height: 1.2;
+  animation: fadeIn 2s ease-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-subtitle-main {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  color: goldenrod;
+  font-size: 2rem;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-out 0.5s;
+}
+
+.hero-button {
+  background-color: #027b9a;
+  border-radius: 21px;
+  color: #fffff2;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 18px;
+  padding: 12px 30px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: fadeIn 2s ease-out 1s;
+}
+
+.hero-button:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  color: #027b9a;
+}
+
+.hero-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-image {
+  position: absolute;
+  max-width: 55%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.image-1 {
+  top: 0%;
+  right: 25%;
+  transform: translate3d(7%, 7%, 0) rotate(-15deg);
+  animation: moveImage1 10s infinite alternate;
+}
+
+.image-2 {
+  bottom: 10%;
+  right: 10%;
+  transform: translate3d(7%, 7%, 0) rotate(-15deg);
+  animation: moveImage2 10s infinite alternate;
+}
+
+@keyframes moveImage1 {
+  0% {
+    transform: translate3d(-15%, -5%, 0) rotate(-20deg);
+  }
+  100% {
+    transform: translate3d(-10%, 0%, 0) rotate(-10deg);
+  }
+}
+
+@keyframes moveImage2 {
+  0% {
+    transform: translate3d(10%, 10%, 0) rotate(-20deg);
+  }
+  100% {
+    transform: translate3d(5%, 5%, 0) rotate(-10deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+  }
+
+  .hero-image {
+    max-width: 60%;
+  }
+}
