@@ -1,0 +1,202 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+/* Adjusted main container height */
+.landing-page-container {
+  width: 100%;
+  min-height: 100vh; /* Changed from 90rem to fit the viewport height */
+  height: auto;
+  background-image: url("https://s29.postimg.org/vho8xb2pj/landing_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: #09383E;
+}
+
+.ellipses-container {
+  width: 30rem; /* Reduced width */
+  height: 30rem; /* Reduced height */
+  margin-top: 2rem; /* Adjusted to bring the container down a bit */
+}
+
+.ellipses-container .greeting {
+  font-size: 1.8rem; /* Reduced font size */
+  top: 8rem; /* Adjusted position */
+  letter-spacing: 2rem; /* Reduced letter spacing */
+}
+
+/* Adjust the box container for smaller height */
+.box {
+  padding: 20px;
+  margin: 15px;
+}
+
+@media (min-width: 950px) {
+  .row1-container,
+  .row2-container {
+    align-items: flex-start;
+  }
+
+  .box-down {
+    top: 50px; /* Reduced vertical spacing */
+  }
+
+  .header {
+    margin-top: 50px; /* Reduced top margin */
+  }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    color: #ff8c00;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        color: #fffff5;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        color: #fffff5;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
+.box {
+    color: #fffff5;
+    background-color: #008080; /* Light gray background color */
+    padding: 20px; /* Padding inside the boxes */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text within the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Specific colors for different box classes */
+  .cyan {
+    background-color: #027b9a; /* Cyan color */
+    color: white; /* White text for contrast */
+  }
+  
+  .red {
+    background-color: #008080; /* Red color */
+    color: white; /* White text for contrast */
+  }
+  
+  .blue {
+    background-color: #027b9a; /* Blue color */
+    color: white; /* White text for contrast */
+  }
+  
+  /* Additional styling if needed */
+  h2 {
+    margin-bottom: 10px; /* Space below headings */
+  }
+  
+  p {
+    margin: 0; /* Remove default margin */
+  }
+  
