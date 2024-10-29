@@ -1,0 +1,78 @@
+body {
+    margin: 40px;
+  }
+  
+  .content-wrapper {
+    margin: 0 auto;
+    max-width: 960px; /* Adjust max-width to fit the layout */
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #ff8c00;
+    margin-top: 40px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between video containers */
+    flex-wrap: wrap; /* Wraps items on smaller screens */
+  }
+  
+  .video-container {
+    position: relative;
+    width: 45%; /* Makes each video take up 45% of the row */
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #000;
+  }
+  
+  .video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 40% ;
+  }
+  
+  .video-container a {
+    border-bottom: 18px solid transparent;
+    border-left: 22px solid #000;
+    border-top: 18px solid transparent;
+    box-sizing: border-box;
+    height: 26px;
+    margin: -13px 0 0 -11px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    text-indent: -999em;
+    width: 22px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fffff5;
+  }
+  
+  .video-container a:hover {
+    border-left-color: #f00;
+  }
+  
+  @media (max-width: 768px) {
+    .video-grid {
+      flex-direction: column; /* Stacks videos vertically on smaller screens */
+    }
+  
+    .video-container {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Space between stacked videos */
+    }
+  }
+  

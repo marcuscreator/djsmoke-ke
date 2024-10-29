@@ -234,3 +234,21 @@ p {
 .delay-8 {
 	animation-delay: 2.4s;
 }
+
+.responsive-text {
+	color: #fffff5;
+	font-size: 1.5rem; /* Default font size for larger screens */
+  }
+  
+  @media (max-width: 768px) {
+	.responsive-text {
+	  font-size: 1.2rem; /* Adjust font size for medium screens */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.responsive-text {
+	  font-size: 1rem; /* Further adjust font size for mobile screens */
+	}
+  }
+  

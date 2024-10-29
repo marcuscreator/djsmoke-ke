@@ -1,0 +1,42 @@
+<div class="content-wrapper">
+    <div class="header">
+      <h1>Check Out Our</h1>
+      <h1>Youtube Channel</h1>
+    </div>
+  
+    <div class="video-grid">
+      <div class="video-container">
+        <img src="smokeimg29.jpg" alt="Video Thumbnail" />
+        <a href="https://www.youtube.com/watch?v=SyRchIzIq9I" target="_blank">Play</a>
+      </div>
+      <div class="video-container">
+        <img src="smokeimg32.jpg" alt="Video Thumbnail" />
+        <a href="https://www.youtube.com/watch?v=iOFO26kpcGs" target="_blank">Play</a>
+      </div>
+    </div>
+  </div>
+  
+<script>
+  let playButton = document.querySelector(".video-container a");
+  playButton.addEventListener("click", playVideo);
+
+  function playVideo(e) {
+    e.preventDefault();
+    let videoContainer = this.parentNode;
+    let videoUrl = this.href;
+    let videoId = videoUrl.split(".com/")[1];
+    let iframeUrl;
+
+    if (videoUrl.includes("vimeo")) {
+      // vimeo
+      videoId = videoId.split("?")[0];
+      iframeUrl = `//player.vimeo.com/video/${videoId}?autoplay=1`;
+    } else {
+      // youtube
+      videoId = videoId.split("v=")[1];
+      iframeUrl = `//www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+
+    videoContainer.innerHTML = `<iframe src="${iframeUrl}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>`;
+  }
+</script>
