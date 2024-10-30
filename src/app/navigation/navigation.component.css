@@ -145,6 +145,7 @@ nav .wrapper{
 .row .mega-links li a:hover{
   color: #f2f2f2;
 }
+
 .wrapper .btn{
   color: #000;
   font-size: 20px;
@@ -225,7 +226,7 @@ nav .wrapper{
   }
   .nav-links .mobile-item{
     display: block;
-    color: #f2f2f2;
+    color: #ff8c00;
     font-size: 20px;
     font-weight: 500;
     padding-left: 20px;

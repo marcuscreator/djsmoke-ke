@@ -81,14 +81,18 @@ h1:last-of-type {
     text-align: center;
     line-height: 0.8;
     margin-bottom: 50px;
-    color: #ff8c00;
+    
     margin-top: 100px;
+}
+
+.header h1{
+  color: #ff8c00;
 }
 
 .header p {
     margin: 0 auto;
     line-height: 2;
-    color: var(--grayishBlue);
+    color: #fffff5;
 }
 
 
@@ -146,13 +150,14 @@ h2 {
         justify-content: center;
         align-items: center;
     }
-    
+  
     .row2-container {
         display: flex;
         color: #fffff5;
         justify-content: center;
         align-items: center;
     }
+   
     .box-down {
         position: relative;
         top: 150px;
@@ -185,6 +190,7 @@ h2 {
     background-color: #008080; /* Red color */
     color: white; /* White text for contrast */
   }
+
   
   .blue {
     background-color: #027b9a; /* Blue color */
@@ -193,6 +199,9 @@ h2 {
   
   /* Additional styling if needed */
   h2 {
+    color: #ff8c00;
+    font-size: larger;
+    font-weight: 600;
     margin-bottom: 10px; /* Space below headings */
   }
   
